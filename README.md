@@ -64,12 +64,15 @@ Structures: This datasets includes 26 columns and 205 rows.
 
 **Highway mpg:** Fuel efficiency on the highway (mpg)
 
+## Tools and Technologies:
+Python, Pandas, Matplotlib, Seaborn, etc.
+
 ## Purpose and Outcome:
 Purpose: To determine the features of a car that affect its price and to create predictive models with high accuracy.
 Outcome: A precise model for predicting car prices, along with features that affect those prices.
 
 
-# Results
+# Key insights: (đưa thêm bảng r2 và adj r2 để thể hiện kết quả)
 General conclusion:
 Here are the results of the features that influence car prices, selected using three different methods: 
 
@@ -79,4 +82,5 @@ Here are the results of the features that influence car prices, selected using t
   
 3. Features filtered by RFE+VIF:
 
+# Recommendations:
    
