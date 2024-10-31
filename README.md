@@ -109,7 +109,7 @@ Some gas-powered cars have very high prices, ranging from 30000$ to 45000$.
 However, the average price of gas vehicles is lower than that of diesel vehicles.
 
 
-### Avg price by aspiration: 
+### Aspiration: 
 ![image](https://github.com/user-attachments/assets/d4cd368a-9684-4a51-a44f-976d46be99c1)
 
 STD aspiration has a significantly higher count compared to the Turbo type. This may suggest that std cars are more common than turbo cars.
@@ -119,7 +119,7 @@ There are also a few outliers in both categories, indicating that some cars have
 The average price of "turbo" cars is higher than that of "std" cars.
 
 
-### Avg price by doornumber:
+### Doornumber:
 ![image](https://github.com/user-attachments/assets/6e85d984-29ed-42ba-a22a-4f55ca8a2620)
 
 The number of four-door vehicle models is greater than that of two-door models, but the difference is not significant.
@@ -127,7 +127,7 @@ The number of four-door vehicle models is greater than that of two-door models, 
 The two other charts show that there is not much difference in price between two-door and four-door vehicles.
 
 
-### Avg price by carbody:
+### Carbody:
 ![image](https://github.com/user-attachments/assets/a23889c7-4765-4171-af52-c9a7c10ea603)
 
 The "sedan" type has the highest count, followed by "hatchback," making these two the most common body types. "wagon," "hardtop," and "convertible" types have significantly lower counts.
