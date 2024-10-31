@@ -1,4 +1,4 @@
-# [Final Project] - Uyen Phuong
+![image](https://github.com/user-attachments/assets/11b34f59-aa44-4656-9b76-88d4984ba485)# [Final Project] - Uyen Phuong
 ## Car Prices Predicting
 
 ## About this project
@@ -70,6 +70,8 @@ Python, Pandas, Matplotlib, Seaborn, etc.
 ## Purpose and Outcome:
 Purpose: To determine the features of a car that affect its price and to create predictive models with high accuracy.
 Outcome: A precise model for predicting car prices, along with features that affect those prices.
+
+
 
 ## EDA: 
 
@@ -149,6 +151,37 @@ From comparison, it can be noted that the features selected for the regression m
 
 Next, let's examine the results of the regression models with features selected through various methods.
 
+## Regression Models:
+**R2 score and Adjusted R2 score of regression models_result 1:**
+![image](https://github.com/user-attachments/assets/222f251b-af13-4600-a38a-07f1043eded2)
+
+The adjusted R² score for the training set is quite good, while the adjusted R² for the testing set is very poor. This discrepancy is due to the number of independent variables being too large compared to the number of samples tested, which results in a negative outcome. The negative result indicates that the model is over-parameterized. Overparameterization is a concept in machine learning (ML) that refers to a model having more parameters than the available training data.
+
+**R2 score and Adjusted R2 score of regression models_result 2:**
+![image](https://github.com/user-attachments/assets/7b0c7793-36fd-469c-9e7a-b746faabf97f)
+
+After applying Recursive Feature Elimination (RFE), the number of independent variables was reduced to 15. This adjustment also improved the adjusted R² score for both the training and testing sets.
+
+**R2 score and Adjusted R2 score of regression models_result 3:**
+![image](https://github.com/user-attachments/assets/e843a893-c29e-47e7-a209-9cc586ec9af4)
+
+There was a slight change in the adjusted R² score for the training data, and the adjusted R² score for the testing data improved significantly.
+
+**Overall Conclusion**
+Linear Regression: Has relatively low Training R2_Score and Testing R2_Score, especially the Testing adjusted_R2_Score, which only reaches 74.90. This indicates that the linear regression model does not fit the data well and struggles to compete with more complex models.
+
+Decision Tree and XGBoost: Show good performance with both Training R2_Score and Testing R2_Score being high and a fairly high Testing adjusted_R2_Score. This demonstrates good generalization capability, meaning they can effectively predict on new data.
+
+Random Forest: Achieves the highest Testing R2_Score and Testing adjusted_R2_Score, indicating the best overall performance among all models. It’s the most suitable choice for this dataset as it predicts well on new data.
+
+LGBM: Has slightly lower Testing R2_Score and Testing adjusted_R2_Score compared to other models, possibly because the data structure does not fit as well with this algorithm compared to Random Forest or XGBoost.
 
 ### Recommendations:
-   
+For analyst:
+Random Forest is the model with the best overall performance for this dataset.
+Linear Regression has the lowest performance and is less likely to predict accurately on the test set.
+
+If you want to further improve the models, you can try techniques such as hyperparameter tuning, feature engineering, or model ensembling to enhance overall performance.
+
+For company:
+
