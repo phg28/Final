@@ -1,5 +1,8 @@
-![image](https://github.com/user-attachments/assets/11b34f59-aa44-4656-9b76-88d4984ba485)# [Final Project] - Uyen Phuong
+# [Final Project] - Uyen Phuong
 ## Car Prices Predicting
+![image](https://github.com/user-attachments/assets/b2d97bfc-9b5d-4e70-a0fa-df70e2fac0ff)
+Pic credit: Volvo Australia
+
 
 ## About this project
 This project seeks to analyze car price datasets to identify the features that influence car prices. Using these insights, we will develop a model to predict car prices based on the selected features.
@@ -64,13 +67,26 @@ Structures: This datasets includes 26 columns and 205 rows.
 
 **Highway mpg:** Fuel efficiency on the highway (mpg)
 
-## Tools and Technologies:
-Python, Pandas, Matplotlib, Seaborn, etc.
+## Tools and Technologies Applied:
+
+Python: Data analysis
+
+Libraries:
+
+•Pandas & Numpy: Data analysis.
+
+•Matplotlib & Seaborn: Visualization, presentation.
+
+•Scikit-learn: Building and evaluating machine learning models, such as Logistic Regression, Random Forest, Decision Tree, CatBoost and Gradient Boosting…
+
+Techniques: Data cleaning, handling missing values, and correlation analysis, RFE, VIF.
+
 
 ## Purpose and Outcome:
-Purpose: To determine the features of a car that affect its price and to create predictive models with high accuracy.
-Outcome: A precise model for predicting car prices, along with features that affect those prices.
 
+Purpose: To determine the features of a car that affect its price and to create predictive models with high accuracy.
+
+Outcome: A precise model for predicting car prices, along with features that affect those prices.
 
 
 ## EDA: 
@@ -177,11 +193,23 @@ Random Forest: Achieves the highest Testing R2_Score and Testing adjusted_R2_Sco
 LGBM: Has slightly lower Testing R2_Score and Testing adjusted_R2_Score compared to other models, possibly because the data structure does not fit as well with this algorithm compared to Random Forest or XGBoost.
 
 ### Recommendations:
-For analyst:
-Random Forest is the model with the best overall performance for this dataset.
-Linear Regression has the lowest performance and is less likely to predict accurately on the test set.
+Manufacturing companies can focus on examining the features that significantly impact production costs. This will allow them to better control production expenses when introducing vehicles to consumers. Key features to consider include: symboling, wheelbase, car length, car width, car height, curb weight, engine size, bore ratio, stroke, compression ratio, horsepower, peak RPM, city MPG, highway MPG, and engine type (OHC).
 
-If you want to further improve the models, you can try techniques such as hyperparameter tuning, feature engineering, or model ensembling to enhance overall performance.
+**Focus on Key Features:**
 
-For company:
+Companies should prioritize analyzing and understanding the features that significantly influence vehicle prices. This can help in making informed decisions about production and pricing strategies.
+
+**Cost Control Strategies:**
+
+By understanding how specific features impact production costs, companies can identify areas to reduce expenses without compromising quality. This may involve optimizing materials or manufacturing processes.
+
+**Market Segmentation:**
+
+Tailor marketing strategies based on the features that appeal to different market segments. For example, emphasizing fuel efficiency (city MPG and highway MPG) for eco-conscious consumers or performance features (horsepower and engine size) for performance enthusiasts.
+
+**Continuous Improvement:**
+
+Regularly review and update the features based on consumer feedback and technological advancements to stay competitive in the market. This includes adapting to emerging trends, such as electric vehicles or advanced safety features.
+
+
 
