@@ -72,7 +72,6 @@ Purpose: To determine the features of a car that affect its price and to create 
 Outcome: A precise model for predicting car prices, along with features that affect those prices.
 
 ## EDA: 
-1. Avg price by each categorical columns:
 
 ### AVG price by Car brand
 ![image](https://github.com/user-attachments/assets/19ce93f2-fb6c-47f4-8735-650969fbb161)
@@ -126,15 +125,30 @@ Cars with MPFI fuel systems have the highest average price, around $18,000, foll
 
 **Based on a visual analysis of the charts, it appears that the "doornumber" feature does not show any price differences among the types. This feature will be removed when integrating into the models.**
 
-## Key insights: (đưa thêm bảng r2 và adj r2 để thể hiện kết quả)
-General conclusion:
+## Correlation: 
+![image](https://github.com/user-attachments/assets/1328e306-903d-422a-90d3-d13faa35e48c)
+
+This project primarily analyzes the features that affect car prices, so in this correlation, I will mainly focus on the relationship between price and each individual feature.
+From the matrix, it is evident that, except for car height, stroke, compression ratio, and peak RPM, the remaining features all have a correlation with price. Specifically:
++ Negative correlation: city MPG, highway MPG.
++ Positive correlation: wheelbase, car length, car width, curb weight, engine size, bore ratio, horsepower.
+
+**Features that do not show any correlation with price will also be removed when incorporating them into the regression model.**
+
+## Key insights:
+### General conclusion:
 Here are the results of the features that influence car prices, selected using three different methods: 
-~
+
 1. Features filtered by EDA: wheelbase, carlength, carwidth, curbweight, enginesize, boreratio, horsepower, citympg, highwaympg, fueltype, aspiration, carbody, drivewheel, enginelocation, enginetype, cylindernumber, fuelsystem
    
-2. Features filtered by RFE:
+2. Features filtered by RFE: symboling, wheelbase, carlength, carwidth, carheight, curbweight, enginesize, boreratio, stroke, compressionratio, horsepower, peakrpm, citympg, highwaympg, enginetype_ohc
   
-3. Features filtered by RFE+VIF:
+3. Features filtered by RFE+VIF: enginetype_ohc, compressionratio, enginesize, citympg, carwidth, peakrpm, stroke.
 
-# Recommendations:
+From comparison, it can be noted that the features selected for the regression model through Exploratory Data Analysis (EDA) differ from those obtained using the Recursive Feature Elimination (RFE) and Variance Inflation Factor (VIF) methods. Even features that show no correlation in the correlation matrix can still be significant when using RFE and VIF, such as "stroke." 
+
+Next, let's examine the results of the regression models with features selected through various methods.
+
+
+### Recommendations:
    
