@@ -91,7 +91,7 @@ Outcome: A precise model for predicting car prices, along with features that aff
 
 ## EDA: 
 
-### AVG price by Car brand
+### Car brand
 ![image](https://github.com/user-attachments/assets/19ce93f2-fb6c-47f4-8735-650969fbb161)
 
 It can be seen that there is a difference in average price between car brands:
@@ -99,49 +99,72 @@ It can be seen that there is a difference in average price between car brands:
 + High-average car group: Volvo, Audi, Mercury, Alfa-Romero, Peugeot, Saab.
 + Affordable car group: Mazda, Nissan, Volkswagen,...
 
-### Avg price by fuealtype used:
-![image](https://github.com/user-attachments/assets/92c5a096-fa59-4dd1-9f72-9158ffbd5736)
+### Fueltype:
+![image](https://github.com/user-attachments/assets/2861325b-05eb-4d3e-beaf-d63ac4816b09)
 
-On average, diesel-powered cars' price (~16000$) are slightly more expensive than petrol-powered cars (~13000$).
+The chart indicates that there are many more vehicle models using gas as their fueltype compared to those using diesel.
+
+Some gas-powered cars have very high prices, ranging from 30000$ to 45000$.
+
+However, the average price of gas vehicles is lower than that of diesel vehicles.
+
 
 ### Avg price by aspiration: 
-![image](https://github.com/user-attachments/assets/701d31e3-ce2d-41e3-8ba2-4b6aa9c98b72)
+![image](https://github.com/user-attachments/assets/d4cd368a-9684-4a51-a44f-976d46be99c1)
 
-On average, turbo cars' price (~17000$) are slightly more expensive than std cars (~13000$).
+STD aspiration has a significantly higher count compared to the Turbo type. This may suggest that std cars are more common than turbo cars.
+
+There are also a few outliers in both categories, indicating that some cars have significantly higher.
+
+The average price of "turbo" cars is higher than that of "std" cars.
+
 
 ### Avg price by doornumber:
-![image](https://github.com/user-attachments/assets/32b5a204-a7af-4c42-8d3e-eb509c479156)
+![image](https://github.com/user-attachments/assets/6e85d984-29ed-42ba-a22a-4f55ca8a2620)
 
-There appears to be no significant price difference based on the number of doors in cars, as the average cost of 2-door and 4-door models does not vary by more than $1,000.
+The number of four-door vehicle models is greater than that of two-door models, but the difference is not significant.
+
+The two other charts show that there is not much difference in price between two-door and four-door vehicles.
+
 
 ### Avg price by carbody:
-![image](https://github.com/user-attachments/assets/1eb32a76-f17c-4eee-ba19-9af0d5c254d5)
+![image](https://github.com/user-attachments/assets/a23889c7-4765-4171-af52-c9a7c10ea603)
 
-Convertibles and hardtops have the highest average price, both around $23,000, with no distinction between the two. The other models are priced lower, averaging approximately $14,000 for sedans, $12,500 for wagons, and $10,000 for hatchbacks.
+The "sedan" type has the highest count, followed by "hatchback," making these two the most common body types. "wagon," "hardtop," and "convertible" types have significantly lower counts.
 
-### Avg price by drivewheel: 
-![image](https://github.com/user-attachments/assets/702c5a22-c327-46b2-8232-d399ae8c9697)
+"Convertible" and "hardtop" cars have a higher median price, with "hardtop" displaying the widest price range. "Hatchback" cars have the lowest median price, and they are generally cheaper than other body types.
 
-RWD cars, averaging around $20,000, have a significantly higher price than FWD cars (approximately $9,000) and 4WD cars (around $11,000).
+The average price is highest for "hardtop" cars, followed by "convertible" cars. "Hatchback" cars have the lowest average price.
 
-### Avg price by Cylindernumber: 
-![image](https://github.com/user-attachments/assets/acc7684f-956d-46a5-a400-d21cdb710208)
+### Drivewheel: 
+![image](https://github.com/user-attachments/assets/9138c349-1b5e-4927-96d0-057bdd7e08e9)
 
-Cars with eight and twelve cylinders have the highest average prices, ranging from $31,000 to $32,000. Five and six-cylinder cars average between $21,000 and $23,000. In contrast, four-cylinder cars average $13,000, while two-cylinder and three-cylinder cars average $10,000 and $5,000, respectively.
+"FWD" is the most common drive wheel type, followed by "RWD". "4WD" is the least common.
 
-### Avg price by Engine type: 
-![image](https://github.com/user-attachments/assets/27b11bc1-bb47-4250-a67b-cc42bda7a5ce)
+"RWD" has the highest median price and the widest price range, suggesting that rear-wheel-drive vehicles tend to be more expensive.
 
-Cars with DOHC and OHCV engines have the highest average prices, at $31,000 and $25,000, respectively. 
-DOHC vehicles average around $18,000. 
-Meanwhile, cars with the other engine types range from $13,000 to $15,000.
+The average price is highest for "RWD" vehicles, followed by "FWD," with "4WD" having the lowest average price.
 
-### Avg price by Fuelsystem: 
-![image](https://github.com/user-attachments/assets/857958d6-e579-433c-b5ba-0518ed382d6c)
+### Enginetype: 
+![image](https://github.com/user-attachments/assets/a1c67986-ef63-412c-b670-0a15cd22415e)
 
-Cars with MPFI fuel systems have the highest average price, around $18,000, followed by IDI cars at approximately $16,000. Both 4BBL and MFI cars are priced around $12,500, while SPDI and SPFI cars have an average price of about $11,000.
+The majority of cars have the "ohc" engine type, which significantly outnumbers all other engine types. This shows that "ohc" engines are the most common in this dataset.
 
-**Based on a visual analysis of the charts, it appears that the "doornumber" feature does not show any price differences among the types. This feature will be removed when integrating into the models.**
+Engine type appears to correlate with price, with "dohcv" and "ohcv" engines indicating higher-value cars, while "ohc" engines are more common and generally more affordable.
+
+
+### Fuelsystem: 
+![image](https://github.com/user-attachments/assets/2ab68fd8-3317-4f49-8572-e9e310679565)
+
+The "mpfi" fuel system is the most common, followed by "2bbl".
+
+The box plot reveals that "mpfi" has the highest price range, with a considerable number of high-value outliers, suggesting that it’s often associated with more expensive vehicles. The "idi" and "spdi" fuel systems have relatively lower median prices but exhibit some price variability. The "2bbl" system has a much narrower and lower price range.
+
+The "mpfi" fuel system is both the most common and associated with higher-priced cars, while "2bbl" is common but linked to lower-cost cars.
+
+**Overall Conclusion**
+
+**In the categorical columns, the "doornumber" feature appears to have no impact on price differences among types. It might be worth considering removing this feature when constructing regression models.**
 
 ## Correlation: 
 ![image](https://github.com/user-attachments/assets/1328e306-903d-422a-90d3-d13faa35e48c)
